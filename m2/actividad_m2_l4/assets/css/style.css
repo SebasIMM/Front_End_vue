@@ -1,0 +1,9 @@
+.w-img {
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .w-img {
+    width: 50%;
+  }
+}

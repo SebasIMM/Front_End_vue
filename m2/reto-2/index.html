@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de prueba de HTML5</title>
+</head>
+<body>
+  <form action="" method="get" style="display: flex; gap: 10px; flex-direction: column; max-width: 400px;">
+  <!-- Nombre -->
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required autofocus>
+    </div>
+
+  <!-- Correo electrónico -->
+    <div>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+    </div>
+
+  <!-- URL -->
+    <div>
+      <label for="url">URL personal:</label>
+      <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal">
+    </div>
+
+  <!-- Fecha -->
+    <div>
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha">
+    </div>
+
+  <!-- Tiempo -->
+    <div>
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora">
+    </div>
+
+  <!-- Fecha y hora -->
+    <div>
+      <label for="fechahora">Fecha y hora:</label>
+      <input type="datetime-local" id="fechahora" name="fechahora">
+    </div>
+
+  <!-- Mes -->
+    <div>
+      <label for="mes">Mes:</label>
+      <input type="month" id="mes" name="mes">
+    </div>
+
+  <!-- Semana -->
+    <div>
+      <label for="semana">Semana:</label>
+      <input type="week" id="semana" name="semana">
+    </div>
+
+  <!-- Número -->
+    <div>
+      <label for="numero">Número (-10 a 10):</label>
+      <input type="number" id="numero" name="numero" min="-10" max="10">
+    </div>
+
+  <!-- Teléfono -->
+    <div>
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono">
+    </div>
+
+  <!-- Búsqueda -->
+    <div>
+      <label for="busqueda">Término de búsqueda:</label>
+      <input type="search" id="busqueda" name="busqueda">
+    </div>
+
+  <!-- Color -->
+    <div>
+      <label for="color">Color favorito:</label>
+      <input type="color" id="color" name="color">
+    </div>
+
+  <!-- Botón de envío -->
+    <div>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+
+</body>
+</html>

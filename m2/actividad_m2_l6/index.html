@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script defer src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script defer src="assets/js/jquery.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <title>JQuery</title>
+</head>
+<body>
+  <!-- 
+5. Uso de plugins
+• Investiga un plugin sencillo de Bootstrap-jQuery (ejemplo: un carrusel, modal o tooltip).
+• Incorpóralo en tu archivo index.html y prueba su funcionamiento. -->
+  <main>
+    <!-- Toggle del listado show/hide -->
+    <button id="toggle-btn" 
+            style="margin: 1em 4em; padding: 0.5em 1em; font-size: 1.1em; border-radius: 5px; cursor: pointer; background-color: lightblue;">
+      Ocultar lista
+    </button>
+
+    <!-- Listado -->
+    <ul id="list" 
+        style="display: flex; flex-direction: column; gap: 1em; padding-left: 3em; font-size: 1.8em;">
+      <li class="list-color">Item 1</li>
+      <li class="list-color">Item 2</li>
+      <li class="list-color">Item 3</li>
+    </ul>
+
+    <!-- Botón que abre el modal vía data-bs -->
+    <button id="btnExplicacion" 
+      type="button" 
+      class="btn btn-primary mx-5 my-2" 
+      data-bs-toggle="modal" 
+      data-bs-target="#miModal">
+      Ver explicación jQuery
+    </button>
+  </main>
+
+  <!-- Modal (asegurate que el id coincide con data-bs-target) -->
+  <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modal">Qué hace este código con jQuery</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Cambia color de los <code>li</code> a rojo.</li>
+            <li>Agrega un elemento al final de la lista.</li>
+            <li>Muestra/oculta la lista con el otro botón.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

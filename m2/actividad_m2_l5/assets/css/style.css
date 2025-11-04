@@ -1,0 +1,16 @@
+/* reset <p> */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* media query tamaño imagen */
+.w-img {
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .w-img {
+    width: 50%;
+  }
+}
