@@ -1,52 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- idea Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- idea Font Awesome -->
+  <script defer src="https://kit.fontawesome.com/037baac53d.js" crossorigin="anonymous"></script>
   <title>Reto 4</title>
 </head>
-<body>
-  <!-- Header -->
+<body class="bg-body-secondary">
+  <!--hack ========== HEADER ========== -->
   <header>
-    <!-- add header -->
+    <!--idea Navbar Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid"> 
+        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- idea Boton manu responsivo (hamburguesa) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--idea Enlaces de navegacion -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active " aria-current="page" href="#">Home</a>
+            <a class="nav-link active" href="#">Features</a>
+            <a class="nav-link active" href="#">Pricing</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+        <!--idea Boton de login -->
+        <div>
+          <button type="button" class="btn btn-secondary btn-sm mx-4"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Login</button>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <!-- Title -->
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt, totam cumque tempora reiciendis.</p>
+  <!--hack ========== MAIN CONTENT ========== -->
+  <main class="d-flex flex-column align-items-center mt-4 mb-5 gap-2">
+    <!--idea Benvenida / Hero -->
+    <div class="col-10 mb-5">
+      <h1>Hello World</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt, totam cumque tempora reiciendis.</p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
 
-    <button>Learn More</button>
-
-    <!-- Section with paragraphs -->
-    <section>
-      <div>
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente distinctio debitis eius, repellat natus fugiat! Quia, quidem dolorem quo doloremque obcaecati asperiores culpa debitis repellat iusto voluptates esse pariatur.</p>
-      </div>
-      
-      <div>
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt?</p>
-        <button>View Details</button>
-      </div>
-      
-      <div>
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt?</p>
-        <button>View Details</button>
-      </div>
-      
-      <div>
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt?</p>
-        <button>View Details</button>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; Copyright 2025</p>
-    </footer>
+    <!--idea Seccion con parrafos -->
+    <div class="col-10">
+      <section class="row">
+        <!-- idea tarjetas -->
+        <div class="col-8">
+          <h2>Heading</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente distinctio debitis eius, repellat natus fugiat! Quia, quidem dolorem quo doloremque obcaecati asperiores culpa debitis repellat iusto voluptates esse pariatur.</p>
+        </div>
+        <div class="col-4">
+          <h2>Heading</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt?</p>
+          <button class="btn btn-outline-dark btn-sm border border-dark-subtle">View Details<i class="fa-solid fa-arrow-right ms-1"></i></button>
+        </div>
+        <div class="col-4">
+          <h2>Heading</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt?</p>
+          <button class="btn btn-outline-dark btn-sm border border-dark-subtle icon-link">View Details<i class="fa-solid fa-arrow-right ms-1"></i></button>
+        </div>
+        <div class="col-4">
+          <h2>Heading</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur ratione quaerat, minus autem ut unde alias fugiat ipsam quo dicta voluptatum sint itaque expedita doloribus eius, atque, nemo sunt?</p>
+          <button class="btn btn-outline-dark btn-sm border border-dark-subtle">View Details<i class="fa-solid fa-arrow-right ms-1"></i></button>
+        </div>
+      </section>
+    </div>
   </main>
+    
+  <!--hack ========== FOOTER ========== -->
+  <footer class="bg-dark p-4 text-white">
+    <p class="mb-0">&copy; Copyright 2025</p>
+  </footer>
 </body>
 </html>
