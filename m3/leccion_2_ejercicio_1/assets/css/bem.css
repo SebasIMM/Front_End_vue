@@ -1,0 +1,43 @@
+.page {
+  padding: 0;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  max-width: 960px;
+}
+
+.header {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  gap: 1em;
+}
+
+.layout__sidebar {
+  flex: 1;
+  background-color: #333;
+  color: white;
+}
+
+.layout__content {
+  flex: 3;
+}
+
+.layout__sidebar__title {
+  padding: 10% 0 0 15%;
+  margin: 0;
+}
+
+.columns {
+  display: flex;
+  flex: column;
+  gap: 0.5em;
+}
+
+.columns__text {
+  flex: 1;
+  line-height: 1.25em;
+}

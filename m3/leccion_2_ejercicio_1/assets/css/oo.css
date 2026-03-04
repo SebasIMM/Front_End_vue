@@ -1,0 +1,54 @@
+.container {
+  padding: 0;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  max-width: 960px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.spacing-sm {
+  padding: 10px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-md {
+  gap: 1em;
+}
+
+.panel {
+  flex: 1;
+}
+
+.panel-dark {
+  background-color: #333;
+  color: white;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.title-offset {
+  padding: 10% 0 0 15%;
+}
+
+.col-1 { flex: 1; }
+.col-3 { flex: 3; }
+
+.columns {
+  display: flex;
+  gap: 0.5em;
+}
+
+.column {
+  flex: 1;
+  line-height: 1.25em;
+}
+

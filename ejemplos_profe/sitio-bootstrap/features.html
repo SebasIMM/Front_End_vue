@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="shortcut icon" href="assets/img/rocket.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <title>Sitio Bootstrapio | Características</title>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-dark text-white text-center py-3">
+        <h1>Manejo del Framework CSS Bootstrap 5.0</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, officia?</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-navbar" src="assets/img/rocket.svg" alt="Logo Rocket">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Caracteristicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sitios de Interés
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://aulavirtual.sence.cl" target="_blank">Aula
+                                    Virtual Sence</a></li>
+                            <li><a class="dropdown-item" href="https://getbootstrap.com" target="_blank">Bootstrap</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com" target="_blank">w3schools</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="http://www.google.com" target="_blank">Google</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="row my-4">
+            <h2>Grid System Bootstrap</h2>
+            <div class="row my-3">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-1 bg-primary text-white">
+                    <p>Columna 1</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-4 col-xl-1 bg-success text-white">
+                    <p>Columna 2</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-xl-1 bg-warning text-white">
+                    <p>Columna 3</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-1 bg-danger text-white">
+                    <p>Columna 4</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 col-xl-1 bg-secondary text-white">
+                    <p>Columna 5</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-3 col-xl-1 bg-info text-white">
+                    <p>Columna 6</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-3 col-xl-1 bg-ligth text-dark">
+                    <p>Columna 7</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-3 col-xl-1 bg-primary text-white">
+                    <p>Columna 8</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-1 bg-success text-white">
+                    <p>Columna 9</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-1 bg-primary text-white">
+                    <p>Columna 10</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-1 bg-danger text-white">
+                    <p>Columna 11</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-4 col-xl-1 bg-warning text-white">
+                    <p>Columna 12</p>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="d-none d-xl-block col-xl-3 bg-primary text-white">
+                    <h2>Barra informativa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis quisquam enim nisi dolore
+                        asperiores facilis quos quasi, ducimus cum explicabo!</p>
+                </div>
+                <div class="d-block col-lg-9 col-xl-6 bg-success  text-white">
+                    <h2>Contenido importante</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque, rem modi natus consectetur
+                        non
+                        sit, fugiat similique laborum ratione, ducimus aperiam magnam necessitatibus id ullam a!
+                        Accusantium, est quod.</p>
+                </div>
+                <div class="d-none d-lg-block col-lg-3 col-xl-3 bg-danger text-white">
+                    <h2>Contenido de marketing</h2>
+                    <ul>
+                        <li>Lala</li>
+                        <li>Lola</li>
+                        <li>Lelon</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row my-4 bg-primary text-white p-3 text-center">
+                <h2>Manejo de Tablas</h2>
+            </div>
+            <div class="row table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>País</th>
+                            <th>Estado</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aquiles Bailo</td>
+                            <td>Chile</td>
+                            <td>&#128526;</td>
+                            <td class="text-end">40 años</td>
+                        </tr>
+                        <tr>
+                            <td>Elba Lazo</td>
+                            <td>Argentina</td>
+                            <td>&#128549;</td>
+                            <td class="text-end">25 años</td>
+                        </tr>
+                        <tr>
+                            <td>Alan Brito</td>
+                            <td>Perú</td>
+                            <td>&#128567;</td>
+                            <td class="text-end">38 años</td>
+                        </tr>
+                        <tr>
+                            <td>Susana Orias</td>
+                            <td>Venezuela</td>
+                            <td>&#128554;</td>
+                            <td class="text-end">32 años</td>
+                        </tr>
+                        <tr>
+                            <td>Esteban Dido</td>
+                            <td>Brasil</td>
+                            <td>&#128511;</td>
+                            <td class="text-end">48 años</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table-secondary">
+                        <tr class="fw-bold">
+                            <td colspan="3">Promedio Edad</td>
+                            <td class="text-end">36 años</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+
+    </section>
+
+    <aside>
+
+    </aside>
+
+    <footer class="container-fluid bg-dark text-white p-5 mt-2">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <img src="assets/img/rocket.svg" alt="Logo Empresa">
+                <p class="d-inline">&copy;2025 Bootcamp FrontEnd Javascript</p>
+            </div>
+            <div class="col-md-4 mb-3 text-center">
+                <h4>Mapa del Sitio</h4>
+                <hr class="text-white">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="features.html">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="productos.html">Productos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card bg-transparent border border-0">
+                    <div class="card-header border border-0">
+                        <h4 class="card-title text-white">Subscríbete a nuestro newsletter!!!!</h4>
+                    </div>
+                    <div class="card-body border border-0">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico">
+                            <button class="btn btn-outline-light" type="button">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center border border-0">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="https://instagram.com" target="_blank">
+                                    <i class="bi bi-instagram fs-1 text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="https://tiktok.com" target="_blank">
+                                    <i class="bi bi-tiktok fs-1 text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="https://www.facebook.com" target="_blank">
+                                    <i class="bi bi-facebook fs-1 text-white"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="https://linkedin.com" target="_blank">
+                                    <i class="bi bi-linkedin fs-1 text-white"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="text-white">
+        <div class="row text-center">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque mollitia earum repudiandae harum numquam
+                eveniet molestiae soluta alias dolore facere!</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
