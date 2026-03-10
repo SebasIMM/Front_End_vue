@@ -1,0 +1,13 @@
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  background: $secondary-color;
+  color: white;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: lighten($secondary-color, 5%);
+}

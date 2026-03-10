@@ -1,3 +1,6 @@
 [submodule "m2/ejercicio_practico"]
 	path = m2/ejercicio_practico
 	url = git@github.com:SebasIMM/weather-frontend-m2.git
+[submodule "m3/ejercicio_practico"]
+	path = m3/ejercicio_practico
+	url = git@github.com:SebasIMM/weather_sass_m3.git

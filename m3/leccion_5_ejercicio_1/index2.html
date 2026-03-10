@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <title>Proyecto Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          >Carrusel</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          >
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#"
+                >Inicio</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                >Enlace</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled">Deshabilitado</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar" />
+            <button
+              class="btn btn-outline-light"
+              type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARRUSEL -->
+    <div
+      id="carouselExample"
+      class="carousel slide bg-dark-subtle p-5">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center p-5">
+          <h2>Primera opción</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <button class="btn btn-primary">Más información</button>
+        </div>
+
+        <div class="carousel-item text-center p-5">
+          <h2>Segunda opción</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <button class="btn btn-primary">Más información</button>
+        </div>
+
+        <div class="carousel-item text-center p-5">
+          <h2>Tercera opción</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          <button class="btn btn-primary">Más información</button>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- COLUMNAS -->
+    <div class="container text-center mt-5">
+      <div class="row px-5 mx-5">
+        <div class="col-md-4">
+          <img
+            src="https://via.placeholder.com/140"
+            class="rounded-circle mb-3" />
+          <h3>Título 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+          </p>
+          <button class="btn btn-secondary">Más detalle</button>
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="https://via.placeholder.com/140"
+            class="rounded-circle mb-3" />
+          <h3>Título 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+          </p>
+          <button class="btn btn-secondary">Más detalle</button>
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="https://via.placeholder.com/140"
+            class="rounded-circle mb-3" />
+          <h3>Título 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+          </p>
+          <button class="btn btn-secondary">Más detalle</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container mt-5 border-top pt-3">
+      <p class="text-end">
+        <a href="#top">Volver arriba</a>
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
